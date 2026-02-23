@@ -24,7 +24,6 @@ Fensterhöhe = 600
 # Set up the game window
 screen = pygame.display.set_mode((Fensterbreite, Fensterhöhe))
 clock = pygame.time.Clock()
-# Versuche eine andere Schriftart
 font = pygame.font.SysFont('freesans', 48)
 color = 4
 
@@ -53,11 +52,11 @@ while running:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 running = False
-            elif event.key == pygame.K_SPACE:
-                if color >= len(Farben)-1:
-                    color = 0
-                else:
-                    color += 1
+            #elif event.key == pygame.K_SPACE:
+            #    if color >= len(Farben)-1:
+            #        color = 0
+            #    else:
+            #        color += 1
 
     # Spieler-Bewegung mit WASD
     Tasten = pygame.key.get_pressed()
