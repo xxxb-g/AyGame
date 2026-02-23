@@ -1,7 +1,7 @@
 # All rights reserved for now.
 import time
-
 import pygame
+
 # Initialize Pygame
 pygame.init()
 
